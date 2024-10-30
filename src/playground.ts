@@ -3,8 +3,8 @@ import { db } from "./server/db";
 await db.user.create({
     data: {
         emailAddress: 'test@gmail.com',
-        firstName: 'alex',
-        lastName: 'figoli',
+        firstName: 'john',
+        lastName: 'doe',
     }
 })
 console.log('done')
