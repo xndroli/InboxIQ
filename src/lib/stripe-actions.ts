@@ -1,4 +1,4 @@
-' use server'
+'use server'
 
 import { auth } from "@clerk/nextjs/server"
 import { stripe } from "./stripe"
@@ -12,15 +12,16 @@ export async function createCheckoutSession() {
         payment_method_types: ['card'],
         line_items: [
             {
-            price: 'price_1QRfxRGO7yxCYxyi22Pbas2z',
+            price: process.env.STRIPE_PRICE_ID,
             quantity: 1
-            }
+            },
         ],
         mode: 'subscription',
         success_url: `${process.env.NEXT_PUBLIC_URL}/mail`,
-        cancel_url: `${process.env.NEXT_PUBLIC_URL}/mail`,
-        client_reference_id: userId
+        cancel_url: `${process.env.NEXT_PUBLIC_URL}/pricing`,
+        client_reference_id: userId,
     })
+
     redirect(session.url as string)
 }
 
@@ -30,13 +31,13 @@ export async function createBillingPortalSession() {
     const subscription = await db.stripeSubscription.findUnique({
         where: {
             userId: userId
-        }
+        },
     })
     if (!subscription) throw new Error("No subscription found")
     
     const session = await stripe.billingPortal.sessions.create({
         customer: subscription.customerId,
-        return_url: `${process.env.NEXT_PUBLIC_URL}/mail`
+        return_url: `${process.env.NEXT_PUBLIC_URL}/pricing`
     })
     redirect(session.url as string)
 }
@@ -47,7 +48,7 @@ export async function getSubscriptionStatus() {
     const subscription = await db.stripeSubscription.findUnique({
         where: {
             userId: userId
-        }
+        },
     })
     if (!subscription) return false
 
