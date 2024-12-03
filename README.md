@@ -1,29 +1,124 @@
-# Create T3 App
+<div align="center">
+  <br />
+    <a href="https://email-ai-saas-iota.vercel.app/mail" target="_blank">
+      <img src="" alt="Project Banner">
+    </a>
+  <br />
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+  <div>
+    <img src="https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.JS" />
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+    <img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" alt="Prisma" />
+    <img src="https://img.shields.io/badge/OpenAI-74aa9c?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
+    <img src="https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white" alt="Stripe" />
+  </div>
 
-## What's next? How do I make an app with this?
+<h3 align="center">Chat to Email</h3>
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+   <div align="center">
+     Fully featured AI powered email client.
+    </div>
+</div>
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## 📋 <a name="table">Table of Contents</a>
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+1. 🔗 [Overview](#overview)
+2. ⚙️ [Tech Stack and Frameworks](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🚀 [Quick Start](#quick-start)
 
-## Learn More
+## <a name="overview">🔗 Overview</a>
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+This is a fully featured AI powered email client using NextJS and deployed to Vercel. This full-stack application also includes a monthly recurring subscription feature, where users can subscribe to access premium features. The subscription process is handled using Stripe for payments and webhooks for event processing.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## <a name="tech-stack">⚙️ Tech Stack and Frameworks</a>
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Clerk
+- Prisma ORM
+- PostgreSQL
+- AWS SDK
+- OpenAI API
+- Stripe
+- Axios
+- Pinecone
+- OpenAI Edge
+- Neon Database Serverless
+- @tanstack/react-query
+- @clerk/nextjs
+- clsx
+- tailwind-merge
 
-## How do I deploy this?
+## <a name="features">🔋 Features</a>
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+👉 **Stunning Sections**: Includes hero, features, pricing (monthly/yearly), FAQ, testimonials, and download software
+sections.
+
+👉 **Smooth Animations**: Complex CSS for fluid animations and eye-catching effects.
+
+👉 **Cool CSS Gradients**: Beautiful gradient effects using CSS `before` and `after` pseudo-elements.
+
+👉 **Seamless Navigation**: Offers a smooth user experience with intuitive navigation and scrolling.
+
+👉 **Optimized Performance**: Built for fast loading and an optimized experience.
+
+👉 **Pixel Perfect Design**: Ensures flawless responsiveness across all devices and screen sizes.
+
+and many more, including code architecture and reusability
+
+## <a name="quick-start">🚀 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**1. Clone the repository**
+
+Open your terminal and run the following:
+
+```bash
+git clone https://github.com/xndroli/Email-AI-SaaS.git
+```
+
+**2. Navigate to the project directory**
+
+Open your terminal and run the following:
+
+```bash
+cd email-ai-saas
+```
+
+**3. Install the required dependencies**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+This will install all the dependencies listed in the package.json file, including Next.js, React, React DOM, Axios, Stripe, Tailwind CSS, and other specific dependencies such as "@aws-sdk/client-s3" and "@clerk/nextjs".
+
+**4. Setup environment variables**
+
+Create a .env file in the root directory of your project and add the required environment variables.
+
+**5. Run the project**
+
+Finally, run the project using the following:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+
