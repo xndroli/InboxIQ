@@ -1,8 +1,8 @@
 <div align="center">
   <br />
-    <a href="https://email-ai-saas-iota.vercel.app/mail" target="_blank">
+    <!-- <a href="https://email-ai-saas-iota.vercel.app/mail" target="_blank">
       <img src="" alt="Project Banner">
-    </a>
+    </a> -->
   <br />
 
   <div>
@@ -17,7 +17,7 @@
 <h3 align="center">Chat to Email</h3>
 
    <div align="center">
-     Fully featured AI powered email client.
+        Minimalistic AI-powered email client.
     </div>
 </div>
 
@@ -55,20 +55,11 @@ This is a fully featured AI powered email client using NextJS and deployed to Ve
 
 ## <a name="features">🔋 Features</a>
 
-👉 **Stunning Sections**: Includes hero, features, pricing (monthly/yearly), FAQ, testimonials, and download software
-sections.
-
-👉 **Smooth Animations**: Complex CSS for fluid animations and eye-catching effects.
-
-👉 **Cool CSS Gradients**: Beautiful gradient effects using CSS `before` and `after` pseudo-elements.
-
-👉 **Seamless Navigation**: Offers a smooth user experience with intuitive navigation and scrolling.
-
-👉 **Optimized Performance**: Built for fast loading and an optimized experience.
+👉 **Powerful AIO Client**: Smooth animations, minimalistic design, performance optimized, seamless and intuitive navigation with re-sizeable sections, and performance optimized.
 
 👉 **Pixel Perfect Design**: Ensures flawless responsiveness across all devices and screen sizes.
 
-and many more, including code architecture and reusability
+...and much more.
 
 ## <a name="quick-start">🚀 Quick Start</a>
 
