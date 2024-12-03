@@ -1,8 +1,8 @@
 <div align="center">
   <br />
-    <!-- <a href="https://email-ai-saas-iota.vercel.app/mail" target="_blank">
-      <img src="" alt="Project Banner">
-    </a> -->
+    <a href="https://email-ai-saas-iota.vercel.app/" target="_blank">
+      <img src="/public/demo.png" alt="Project Banner">
+    </a>
   <br />
 
   <div>
