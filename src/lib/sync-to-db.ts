@@ -1,6 +1,5 @@
 import { db } from "@/server/db";
-import type { EmailMessage, EmailAddress, EmailAttachment } from "@/types";
-import { Email } from "@prisma/client";
+import type { SyncUpdatedResponse,EmailMessage, EmailAddress, EmailAttachment, EmailHeader } from "@/types";
 import pLimit from 'p-limit';
 import { Prisma } from "@prisma/client";
 import { OramaClient } from "./orama";
@@ -32,6 +31,7 @@ export async function syncEmailsToDatabase(emails: EmailMessage[], accountId: st
             })
             await upsertEmail(email, accountId, 0)
         }
+        await orama.saveIndex()
     } catch (error) {
         console.log('error', error)
     }

@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/badge/Stripe-626CD9?style=for-the-badge&logo=Stripe&logoColor=white" alt="Stripe" />
   </div>
 
-<h3 align="center">Chat to Email</h3>
+<h3 align="center">InboxIQ | Chat to Email</h3>
 
    <div align="center">
         Minimalistic AI-powered email client.
@@ -78,7 +78,7 @@ Make sure you have the following installed on your machine:
 Open your terminal and run the following:
 
 ```bash
-git clone https://github.com/xndroli/Email-AI-SaaS.git
+git clone https://github.com/xndroli/InboxIQ.git
 ```
 
 **2. Navigate to the project directory**
@@ -86,7 +86,7 @@ git clone https://github.com/xndroli/Email-AI-SaaS.git
 Open your terminal and run the following:
 
 ```bash
-cd email-ai-saas
+cd InboxIQ-main
 ```
 
 **3. Install the required dependencies**
